@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css/style.css">
+    
+</head>
+<body>
+
+    <nav>
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="menu.html">MENU</a>
+        <a href="Catering.html">CATERING</a>
+        <a href="contact.html">CONTACT</a>    
+    </nav>
+
+    
+    <h1>Contact us</h1>
+
+    <nav>
+        <img src="../html/images/images.png" style="height: 20px;"> <label>NAKAWA, Port Bell Road, Opposite Capital shoppers</label> 
+        <img src="../html/images/mail.png" style="height: 20px;"> <label>info@adarestaurant.ac.ug</label> 
+        <img src="../html/images/phone.png" style="height: 20px;"> <label>+256 779-743-974/+256 755-985-243</label> 
+           
+    </nav>
+
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Email Address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+
+            <label for="contact reason">Contact Reason</label>
+            <select id="contact reason" name="contact reason">
+              <option value="Reservation">Reservation</option>
+              <option value="help">Help</option>
+              <option value="Booking">Booking</option>
+            </select>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        </div>
+       
+</body>
+</html>
